@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>ListAshop</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <section> class="blog_area single-post-area p_120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 posts-list">
+        <div class="comments-area">
+            <h4>Comments</h4>
+            <div class="comment-list">
+                <div class="single-comment justify-content-between d-flex">
+                    <div class="user justify-content-between d-flex">
+                        <div class="thumb">
+                            <img src="img/blog/c1.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <h5><a >Emilly Blunt</a></h5>
+                            <p class="date">July 4, 2020 at 3:12 pm </p>
+                            <p class="comment">
+                                Never say goodbye till the end comes!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <div class="comment-list">
+                <div class="single-comment justify-content-between d-flex">
+                    <div class="user justify-content-between d-flex">
+                        <div class="thumb">
+                            <img id="myImg"  alt="">
+                        </div>
+                        <div class="desc">
+                            <h5><a id="namef"></a></h5>
+                            <p class="date" id="date"></p>
+                            <p class="comment" id = "commentf">
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="comment-form">
+            <h4>Leave a Comment</h4>
+            <form>
+                <div class="form-group form-inline">
+                  <div class="form-group col-lg-6 col-md-6 name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                  </div>
+                  <div class="form-group col-lg-6 col-md-6 email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                  </div>										
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control mb-10" rows="5" id="comment" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                </div>
+                <a  class="primary-btn submit_btn" id="sent">Post Comment</a>	
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<script>
+    window.onclick = function(e)
+    {   var id =  e.target.id;   
+     if (id === 'sent')
+     {
+        { var txt = document.getElementById('name').value    
+        $( "#namef" ).empty().append( txt );
+        }
+        { var txt2 = document.getElementById('comment').value    
+          $( "#commentf" ).empty().append( txt2 );
+        }
+        $( "#date" ).empty().append( "July 4, 2020 at 3:12 pm" );
+        var x = document.getElementById("myImg");
+        x.setAttribute("src", "img/blog/user1.jpg");
+        x.setAttribute("width", "60");
+        x.setAttribute("height", "60");
+     }  
+     
+    }
+  </script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>

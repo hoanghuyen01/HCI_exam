@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  </head>
+  <body>  
+    <div class="info">
+      <label for="example">Enter Name
+      </label>
+      <input id="example" type="text"
+             name="Ntext" size="20">
+      <br>
+      <label for="age">Enter Age
+      </label>
+      <input id="age1" type="text"
+             name="Ntext" size="20">
+      <br>
+      <label for="add">Enter Address
+      </label>
+      <input id="add1" type="text"
+             name="Ntext" size="20">
+      <br>
+      <label for="phone">Enter Phone number
+      </label>
+      <input id="phone1" type="text"
+             name="Ntext" size="20">
+      <br>
+      <input id="sent" type="submit"  
+             value="Send"> 
+  </div>
+    <p id="name">      
+    </p>
+    <p id="age">      
+    </p>
+    <p id="add">      
+    </p>
+    <p id="phone">      
+    </p>
+    <div>
+      <p>
+        this is a text
+      </p>
+    </div>
+  </body>
+  <script>
+    window.onclick = function(e)
+    {   var id =  e.target.id;   
+     if (id === 'sent')
+     {
+        { var txt = document.getElementById('example').value    
+        $( "#name" ).empty().append( txt );
+        }
+        { var txt2 = document.getElementById('age1').value    
+          $( "#age" ).empty().append( txt2 );
+        }
+        { var txt3 = document.getElementById('add1').value    
+          $( "#add" ).empty().append( txt3 );
+        }
+        { var txt4 = document.getElementById('phone1').value    
+          $( "#phone" ).empty().append( txt4 );
+        }
+     }  
+     
+    }
+  </script>
+</html>
